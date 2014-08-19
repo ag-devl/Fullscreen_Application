@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  userid: 1
+  videoid: 1
+  likes: 1
+  dislikes: 1
+  skip_ad: false
+
+two:
+  userid: 1
+  videoid: 1
+  likes: 1
+  dislikes: 1
+  skip_ad: false

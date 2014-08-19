@@ -1,0 +1,35 @@
+
+<% if !session[:current_user_id] %> 
+  <h1>Sorry, the username and password do not match</h1>
+  <%= link_to "Back", :back %>
+<% else %>
+<h1>Hi <%= session[:name] %>, welcome to Videoshop</h1>
+    <div>
+      <p>Select a video from the list</p>
+       
+       <table>
+        	<thead>
+        		<tr>
+            		<th>Name</th>
+            		<th>Views</th>
+            		<th colspan="3"></th>
+            	</tr>
+        	</thead>
+        	<tbody>
+          		<% @lists.each do |videoshop| %>
+            		<tr>
+             			 <td><%= videoshop.name %></td>
+             			 <td><%= videoshop.views %></td>
+             			 <td>			
+              				<form action="watch" method="get">
+                   				<input type="hidden" name="videoID" value=<%= videoshop.id%>>
+                    			<input type="submit" name ="formID" value="watch">
+                  			</form>
+              			</td>
+            		</tr>
+         		 <% end %>
+        	</tbody>
+        </table>
+    </div>
+
+   <%end %>

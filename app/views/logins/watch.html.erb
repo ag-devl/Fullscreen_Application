@@ -1,0 +1,12 @@
+	<div> 
+		<h2><%= @videoshop.name %></h2>		
+		<label><h3>Views <%= @videoshop.views %></h3></label>
+		<img src="<%= image_path('video.jpg')%>" alt="Your Video">
+	</div>
+	<div>
+				<button name="like"> <a href="/logins/action?status=like">Like</a></button>
+		<button name="dislike"> <a href="/logins/action?status=dislike">Dislike</a></button>
+		<button name="skip"> <a href="/logins/action?status=skip">Skip Ad</a></button>
+
+		<%= link_to 'Back', :back %>
+		</div>

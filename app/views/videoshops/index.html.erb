@@ -1,0 +1,31 @@
+<h1>Listing videoshops</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Videoid</th>
+      <th>Views</th>
+      <th>Prerollads</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @videoshops.each do |videoshop| %>
+      <tr>
+        <td><%= videoshop.name %></td>
+        <td><%= videoshop.videoid %></td>
+        <td><%= videoshop.views %></td>
+        <td><%= videoshop.prerollads %></td>
+        <td><%= link_to 'Show', videoshop %></td>
+        <td><%= link_to 'Edit', edit_videoshop_path(videoshop) %></td>
+        <td><%= link_to 'Destroy', videoshop, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Videoshop', new_videoshop_path %>

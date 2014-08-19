@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @videoshop.name %>
+</p>
+
+<p>
+  <strong>Videoid:</strong>
+  <%= @videoshop.videoid %>
+</p>
+
+<p>
+  <strong>Views:</strong>
+  <%= @videoshop.views %>
+</p>
+
+<p>
+  <strong>Prerollads:</strong>
+  <%= @videoshop.prerollads %>
+</p>
+
+<%= link_to 'Edit', edit_videoshop_path(@videoshop) %> |
+<%= link_to 'Back', videoshops_path %>
