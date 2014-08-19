@@ -5,9 +5,9 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version -- 1.9.3
 
-* System dependencies
+* System dependencies 
 
 * Configuration
 
@@ -15,7 +15,9 @@ Things you may want to cover:
 
 * Database initialization
 
-* How to run the test suite
+* How to run the test suite   
+      TO run the test suite, please access the test folder and using rake commands, please execute the unit tests 
+      for controllers and models. 
 
 * Services (job queues, cache servers, search engines, etc.)
 
